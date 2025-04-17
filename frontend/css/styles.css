@@ -569,3 +569,34 @@ a:hover {
         opacity: 1;
     }
 }
+
+/* Destaque programas */
+.programa-detalhe {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programa-detalhe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Animação botões*/
+.btn-cta {
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+.btn-cta:hover {
+    background-color: #007d57;
+    transform: scale(1.05);
+}
+
+.programa-detalhe {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+  
+.programa-detalhe.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
