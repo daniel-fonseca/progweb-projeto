@@ -136,5 +136,43 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <!-- Integração com API -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.getElementById("form-contato");
+      
+          form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+      
+            const dados = {
+              nome: form.nome.value,
+              email: form.email.value,
+              telefone: form.telefone.value,
+              assunto: form.assunto.value,
+              mensagem: form.mensagem.value,
+            };
+      
+            try {
+              const resposta = await fetch("http://localhost:3000/api/contato", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(dados),
+              });
+      
+              if (resposta.ok) {
+                alert("Mensagem enviada com sucesso!");
+                form.reset();
+              } else {
+                alert("Erro ao enviar mensagem. Tente novamente.");
+              }
+            } catch (erro) {
+              console.error(erro);
+              alert("Erro ao conectar com o servidor.");
+            }
+          });
+        });
+    </script>   
 </body>
 </html>
