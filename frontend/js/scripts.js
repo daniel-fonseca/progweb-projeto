@@ -171,4 +171,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// --- Inscrição ---
+document.addEventListener("DOMContentLoaded", function () {
+  const formInscricao = document.getElementById("form-inscricao");
 
+  if (formInscricao) {
+      formInscricao.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nome = document.getElementById("nome").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const programa = document.getElementById("programa").value.trim();
+
+          if (!nome || !email || !programa) {
+              Swal.fire({
+                  icon: 'error',
+                  title: 'Campos obrigatórios faltando',
+                  text: 'Por favor, preencha Nome, E-mail e Programa/Eventos.',
+              });
+              return;
+          }
+
+          Swal.fire({
+              icon: 'success',
+              title: 'Inscrição recebida!',
+              html: `Obrigado por se inscrever, <strong>${nome}</strong>!<br>Em breve, entraremos em contato pelo e-mail <strong>${email}</strong>.`,
+              showConfirmButton: false,
+              timer: 4500
+          });
+
+          formInscricao.reset();
+      });
+  }
+});
