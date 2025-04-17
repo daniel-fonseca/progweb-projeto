@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doações | COMP+</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Sticky -->
+    <header class="header-sticky">
+        <div class="logo">
+            <img src="assets/img/logo-comp-plus.png" alt="COMP+" />
+        </div>
+        <nav class="nav-principal">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="doacoes.html" class="active">Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <section class="pagina-interna">
+        <div class="container">
+            <h1>Por que Doar para a COMP+</h1>
+            <p>A sua doação nos ajuda a transformar ideias em impacto real. Com ela, conseguimos financiar bolsas, promover inclusão digital e apoiar projetos de inovação tecnológica com alto potencial social.</p>
+
+            <h2>Formas de Doar</h2>
+            <div class="contato-form">
+                <form id="form-doacao">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">Valor da Doação (R$)*</label>
+                        <input type="number" id="valor" name="valor" step="0.01" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta">
+                        <i class="fas fa-hand-holding-heart"></i> Enviar Doação
+                    </button>
+                </form>
+            </div>
+
+            <h2>Reconhecimento</h2>
+            <p>Agradecemos cada doação com profunda gratidão. Seu nome poderá ser incluído em nossos relatórios de impacto ou menções especiais, caso deseje.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/img/logo-comp-plus-white.png" alt="COMP+" class="footer-logo" />
+                    <p>Transformando ideias em impacto real através da computação.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="programas.html">Programas</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados. CNPJ: 12.345.678/0001-99</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
