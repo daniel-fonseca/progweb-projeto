@@ -138,14 +138,18 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: all 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .btn-cta:hover {
-    background-color: #219653;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #007d57;
+    transform: scale(1.05);
 }
+
+.btn-cta:active {
+    transform: scale(0.95);
+}
+
 
 /* --- Seções Genéricas --- */
 .sobre-destaque, .programas-destaque, .eventos-destaque {
@@ -572,31 +576,48 @@ a:hover {
 
 /* Destaque programas */
 .programa-detalhe {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.programa-detalhe.mostrar {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .programa-detalhe:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
+ 
 
-/* Animação botões*/
-.btn-cta {
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-.btn-cta:hover {
-    background-color: #007d57;
-    transform: scale(1.05);
+/* Contato - Feedback Visual - Campos Válidos*/
+input:valid, textarea:valid, select:valid {
+    border-color: #00b386;
+    box-shadow: 0 0 5px rgba(0,179,134,0.4);
 }
 
-.programa-detalhe {
+/* Animações - Contato*/
+.contato-form, .contato-info {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.5s ease;
+    transition: all 0.6s ease-out;
 }
   
-.programa-detalhe.mostrar {
+.contato-form.ativo, .contato-info.ativo {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Efeitos do Mouse em Ícones de Contato*/
+.info-item i {
+    color: #009973;
+    transition: transform 0.3s;
+}
   
+.info-item:hover i {
+    transform: scale(1.2);
+    color: #007a5e;
+}
+

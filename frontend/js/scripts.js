@@ -100,5 +100,75 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+});
+
+// --- Contato - Formulário - Validação e Feedback ---
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('form-contato');
+  
+  form.addEventListener('submit', (e) => {
+      e.preventDefault();
+  
+      const nome = form.nome.value.trim();
+      const email = form.email.value.trim();
+      const assunto = form.assunto.value;
+      const mensagem = form.mensagem.value.trim();
+  
+      if (!nome || !email || !assunto || !mensagem) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+  
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+      form.reset();
   });
+});
+
+// --- Contato - Animação de Elementos ---
+const elementos = document.querySelectorAll('.contato-form, .contato-info');
+
+const observer = new IntersectionObserver((entradas) => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('ativo');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elementos.forEach(el => observer.observe(el));
+
+// --- Doações - Validação e Feedback do Formulário---
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form-doacao");
+
+  form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Evita envio real
+
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const valor = document.getElementById("valor").value.trim();
+
+      if (!nome || !email || !valor || parseFloat(valor) < 1) {
+          Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Por favor, preencha todos os campos obrigatórios corretamente.',
+          });
+          return;
+      }
+
+      Swal.fire({
+          icon: 'success',
+          title: 'Doação enviada!',
+          html: `Obrigado, <strong>${nome}</strong>!<br>Sua doação de <strong>R$${parseFloat(valor).toFixed(2)}</strong> foi registrada com sucesso.`,
+          showConfirmButton: false,
+          timer: 4000
+      });
+
+      form.reset();
+  });
+});
+
 
