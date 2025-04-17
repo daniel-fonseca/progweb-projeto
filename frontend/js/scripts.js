@@ -1,3 +1,4 @@
+// --- interação email Newsletter ---
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.newsletter-form');
   
