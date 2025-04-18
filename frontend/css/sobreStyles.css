@@ -1,0 +1,80 @@
+.pagina-interna h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .sobre-secao {
+    background-color: rgba(44, 62, 80, 0.08);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    text-align: center;
+  }
+
+  .sobre-secao h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .missao-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .missao-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 300px;
+    flex: 1 1 250px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .missao-card i {
+    font-size: 2rem;
+    color: var(--azul-secundario);
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .equipe-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .equipe-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 220px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  }
+  
+  .equipe-card img {
+    width: 100%;
+    border-radius: 100px;
+    max-width: 120px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .equipe-card h3 {
+    margin: 10px 0 5px;
+    color: var(--azul-primario);
+  }
+  
+  .equipe-card p {
+    font-size: 0.95rem;
+    color: var(--cinza-escuro);
+  }
+  
