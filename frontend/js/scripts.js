@@ -16,6 +16,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Animação de Elementos ---
+    const elementos = document.querySelectorAll('.contato-form, .contato-info');
+
+    const observer = new IntersectionObserver((entradas) => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add('ativo');
+      }
+    });
+    }, {
+    threshold: 0.2
+    });
+
+    elementos.forEach(el => observer.observe(el));
+
     // --- Formulário de Contato ---
     const formContato = document.getElementById('form-contato');
     if (formContato) {
@@ -36,7 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(dados),
           });
           const resultado = await resposta.json();
-          alert(resultado.mensagem);
+          // alert(resultado.mensagem);
+          Swal.fire({
+            icon: 'success',
+            title: 'Mensagem de contato enviada com sucesso!',
+            html: `Obrigado, <strong>${dados.nome}</strong>!<br>Assim que possível retornaremos seu contato.`,
+            showConfirmButton: false,
+            timer: 4000
+          });
           formContato.reset();
         } catch (erro) {
           alert('Erro ao enviar mensagem.');
@@ -56,15 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
           valor: parseFloat(document.getElementById('valor').value),
           mensagem: document.getElementById('mensagem').value,
         };
-
-        if (!dados.nome || !dados.email || !dados.valor || parseFloat(dados.valor) < 1) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Por favor, preencha todos os campos obrigatórios corretamente.',
-          });
-          return;
-        }
   
         try {
           const resposta = await fetch('http://localhost:3000/api/doacao', {
@@ -117,43 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
-
-// --- Contato - Formulário - Validação e Feedback ---
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('form-contato');
-  
-  form.addEventListener('submit', (e) => {
-      e.preventDefault();
-  
-      const nome = form.nome.value.trim();
-      const email = form.email.value.trim();
-      const assunto = form.assunto.value;
-      const mensagem = form.mensagem.value.trim();
-  
-      if (!nome || !email || !assunto || !mensagem) {
-        alert('Por favor, preencha todos os campos obrigatórios.');
-        return;
-      }
-  
-      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-      form.reset();
-  });
-});
-
-// --- Contato - Animação de Elementos ---
-const elementos = document.querySelectorAll('.contato-form, .contato-info');
-
-const observer = new IntersectionObserver((entradas) => {
-  entradas.forEach(entrada => {
-    if (entrada.isIntersecting) {
-      entrada.target.classList.add('ativo');
-    }
-  });
-}, {
-  threshold: 0.2
-});
-
-elementos.forEach(el => observer.observe(el));
 
 // --- Inscrição ---
 document.addEventListener("DOMContentLoaded", function () {
