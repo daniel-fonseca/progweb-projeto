@@ -1,141 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato | COMP+</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | COMP+</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contatoStyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Menu Sticky -->
-    <header class="header-sticky">
-        <div class="logo">
-            <img src="/assets/logo.png" alt="COMP+">
-        </div>
-        <nav class="nav-principal">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contato.html" class="active">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Menu Sticky -->
+  <header class="header-sticky">
+    <div class="logo">
+      <img src="assets/img/logo-comp-plus.png" alt="COMP+" />
+    </div>
+    <nav class="nav-principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="parcerias.html">Parcerias</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Conteúdo Principal -->
-    <section class="pagina-interna">
-        <div class="container">
-            <h1>Entre em Contato</h1>
-            
-            <div class="contato-grid">
-                <div class="contato-form">
-                    <form id="form-contato">
-                        <div class="form-group">
-                            <label for="nome">Nome Completo*</label>
-                            <input type="text" id="nome" name="nome" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" name="telefone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="assunto">Assunto*</label>
-                            <select id="assunto" name="assunto" required>
-                                <option value="">Selecione...</option>
-                                <option value="programas">Programas e Projetos</option>
-                                <option value="eventos">Eventos</option>
-                                <option value="parcerias">Parcerias</option>
-                                <option value="doacoes">Doações</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem*</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-cta">
-                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                        </button>
-                    </form>
-                </div>
-                
-                <div class="contato-info">
-                    <h3>Informações de Contato</h3>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Av. da Inovação, 1234<br>Jardim Tecnológico<br>São Paulo/SP - CEP 01234-567</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contato@compmais.org.br<br>parcerias@compmais.org.br</p>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <p>Segunda a Sexta<br>9h às 18h</p>
-                    </div>
-                    
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658447536!3d-23.565734367638633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1621019293333!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Conteúdo Principal -->
+  <section class="pagina-interna">
+    <div class="container">
+      <h1 class="titulo-pagina">Entre em Contato</h1>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <img src="/assets/logo.png" alt="COMP+" class="footer-logo">
-                    <p>Transformando ideias em impacto real através da computação.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="programas.html">Programas</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Redes Sociais</h4>
-                    <div class="redes-sociais">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+      <div class="contato-grid">
+        <div class="contato-form bloco-contato">
+          <form id="form-contato">
+            <div class="form-group">
+              <label for="nome">Nome Completo*</label>
+              <input type="text" id="nome" name="nome" required />
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados. CNPJ: 12.345.678/0001-99</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <div class="form-group">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" />
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto*</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione...</option>
+                <option value="programas">Programas e Projetos</option>
+                <option value="eventos">Eventos</option>
+                <option value="parcerias">Parcerias</option>
+                <option value="doacoes">Doações</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem*</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta" style="margin-top: 20px;">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+        <div class="contato-info bloco-contato">
+          <h2 class="subtitulo">Informações de Contato</h2>
+
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Av. da Inovação, 1234<br />Jardim Tecnológico<br />São Paulo/SP - CEP 01234-567</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>(11) 1234-5678<br />(11) 98765-4321 (WhatsApp)</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>contato@compmais.org.br<br />parcerias@compmais.org.br</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Segunda a Sexta<br />9h às 18h</p>
+          </div>
+
+          <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/img/logo-comp-plus-white.png" alt="COMP+" class="footer-logo" />
+          <p>Fundada em 2012, a COMP+ é uma fundação de apoio à pesquisa e inovação em computação.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Av. da Inovação, 123, São Paulo</p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@compmais.org.br</p>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="redes-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>

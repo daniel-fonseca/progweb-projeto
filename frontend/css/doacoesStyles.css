@@ -1,0 +1,9 @@
+.bloco-contato {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: rgba(44, 62, 80, 0.08);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  

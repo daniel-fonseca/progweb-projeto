@@ -5,21 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inscrição | COMP+</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/inscricaoStyles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Ajuste pontual para evitar scroll desnecessário -->
-  <style>
-    .pagina-interna {
-      min-height: calc(100vh - 280px); /* header + footer */
-      padding-bottom: 40px;
-    }
-  </style>
 </head>
 <body>
   <!-- Menu Sticky -->
   <header class="header-sticky">
     <div class="logo">
-      <img src="/assets/logo.png" alt="COMP+" />
+      <img src="assets/img/logo-comp-plus.png" alt="COMP+" />
     </div>
     <nav class="nav-principal">
       <ul>
@@ -27,7 +20,10 @@
         <li><a href="sobre.html">Sobre Nós</a></li>
         <li><a href="programas.html">Programas</a></li>
         <li><a href="eventos.html">Eventos</a></li>
-        <li><a href="inscricao.html" class="active">Inscrição</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="parcerias.html">Parcerias</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
@@ -37,34 +33,36 @@
   <section class="pagina-interna">
     <div class="container">
       <h1>Inscreva-se em Nossos Programas e Eventos</h1>
-      <p>Preencha o formulário abaixo para participar das iniciativas promovidas pela Fundação COMP+.</p>
+      <p class="subtitulo">Preencha o formulário abaixo para participar das iniciativas promovidas pela Fundação COMP+.</p>
 
-      <div class="contato-form">
-        <form id="form-inscricao">
-          <div class="form-group">
-            <label for="nome">Nome Completo*</label>
-            <input type="text" id="nome" name="nome" required />
-          </div>
+      <div class="conteudo-centralizado">
+        <div class="bloco-conteudo">
+          <form id="form-inscricao">
+            <div class="form-group">
+              <label for="nome">Nome Completo*</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
 
-          <div class="form-group">
-            <label for="email">E-mail*</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="form-group">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
 
-          <div class="form-group">
-            <label for="programa">Programa ou Evento*</label>
-            <input type="text" id="programa" name="programa" required />
-          </div>
+            <div class="form-group">
+              <label for="programa">Programa ou Evento*</label>
+              <input type="text" id="programa" name="programa" required />
+            </div>
 
-          <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-          </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
 
-          <button type="submit" class="btn-cta">
-            <i class="fas fa-check-circle"></i> Enviar Inscrição
-          </button>
-        </form>
+            <button type="submit" class="btn-cta">
+              <i class="fas fa-check-circle"></i> Enviar Inscrição
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -74,8 +72,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <img src="/assets/logo.png" alt="COMP+" class="footer-logo" />
-          <p>Transformando ideias em impacto real através da computação.</p>
+          <img src="assets/img/logo-comp-plus-white.png" alt="COMP+" class="footer-logo" />
+          <p>Fundada em 2012, a COMP+ é uma fundação de apoio à pesquisa e inovação em computação.</p>
         </div>
         <div class="footer-col">
           <h4>Links Rápidos</h4>
@@ -87,18 +85,27 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Redes Sociais</h4>
+          <h4>Contato</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Av. da Inovação, 123, São Paulo</p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@compmais.org.br</p>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
           <div class="redes-sociais">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados. CNPJ: 12.345.678/0001-99</p>
+        <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>

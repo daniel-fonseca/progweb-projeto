@@ -1,0 +1,49 @@
+.pagina-interna h1,
+.pagina-interna .subtitulo,
+.bloco-recursos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: var(--preto);
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+
+.bloco-recursos {
+  background-color: rgba(44, 62, 80, 0.08);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloco-recursos ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.bloco-recursos li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--preto);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bloco-recursos a {
+  color: var(--azul-secundario);
+  font-weight: 600;
+}
+
+.bloco-recursos a:hover {
+  color: var(--verde-destaque);
+}

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre | COMP+</title>
+  <title>Notícias | COMP+</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/sobreStyles.css" />
+  <link rel="stylesheet" href="css/noticiasStyles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Cabeçalho padrão -->
+  <!-- Menu Sticky -->
   <header class="header-sticky">
     <div class="logo">
       <img src="assets/img/logo-comp-plus.png" alt="COMP+" />
@@ -17,12 +17,12 @@
     <nav class="nav-principal">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html" class="active">Sobre Nós</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
         <li><a href="programas.html">Programas</a></li>
         <li><a href="eventos.html">Eventos</a></li>
         <li><a href="recursos.html">Recursos</a></li>
         <li><a href="parcerias.html">Parcerias</a></li>
-        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="noticias.html" class="active">Notícias</a></li>
         <li><a href="doacoes.html">Doações</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
@@ -32,59 +32,35 @@
   <!-- Conteúdo Principal -->
   <section class="pagina-interna">
     <div class="container">
-      <h1>Sobre a COMP+</h1>
+      <h1>Notícias e Atualizações</h1>
+      <p class="subtitulo">Acompanhe as últimas novidades da Fundação COMP+</p>
 
-      <div class="sobre-secao">
-        <h2>Nossa História</h2>
-        <p>Fundada em 2012, a Fundação COMP+ surgiu da necessidade de oferecer suporte administrativo especializado a Instituições Científicas e Tecnológicas (ICTs) e Universidades Públicas para a execução de projetos de pesquisa e inovação em computação.</p>
-        <p>Desde então, temos apoiado mais de 150 projetos e impactado diretamente a vida de milhares de estudantes e pesquisadores em todo o Brasil.</p>
-      </div>
-
-      <div class="sobre-secao">
-        <h2>Missão, Visão e Valores</h2>
-        <div class="missao-grid">
-          <div class="missao-card">
-            <i class="fas fa-bullseye"></i>
-            <h3>Missão</h3>
-            <p>Promover excelência na gestão de projetos de pesquisa e inovação em computação, garantindo conformidade legal e impacto social.</p>
-          </div>
-          <div class="missao-card">
-            <i class="fas fa-eye"></i>
-            <h3>Visão</h3>
-            <p>Ser referência nacional no apoio à pesquisa científica e tecnológica até 2030.</p>
-          </div>
-          <div class="missao-card">
-            <i class="fas fa-heart"></i>
-            <h3>Valores</h3>
-            <p>Legalidade, transparência, inovação e compromisso com a educação.</p>
-          </div>
+      <div class="noticias-lista">
+        <div class="noticia-card">
+          <h2>Hackathon 2024 bate recorde de inscritos</h2>
+          <p class="data-noticia"><i class="fas fa-calendar-alt"></i> 15 de Abril de 2024</p>
+          <p>Com mais de 500 participantes em sua edição mais recente, o Hackathon COMP+ se consolida como um dos maiores eventos de inovação estudantil do Brasil.</p>
+          <a href="#" class="btn-leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
         </div>
-      </div>
 
-      <div class="sobre-secao">
-        <h2>Nossa Equipe</h2>
-        <div class="equipe-grid">
-          <div class="equipe-card">
-            <img src="assets/img/equipe/joao.jpg" alt="João Silva">
-            <h3>João Silva</h3>
-            <p>Diretor Executivo</p>
-          </div>
-          <div class="equipe-card">
-            <img src="assets/img/equipe/maria.jpg" alt="Maria Souza">
-            <h3>Maria Souza</h3>
-            <p>Coordenadora de Projetos</p>
-          </div>
-          <div class="equipe-card">
-            <img src="assets/img/equipe/carlos.jpg" alt="Carlos Oliveira">
-            <h3>Carlos Oliveira</h3>
-            <p>Gerente Financeiro</p>
-          </div>
+        <div class="noticia-card">
+          <h2>Fundação COMP+ lança nova plataforma de cursos gratuitos</h2>
+          <p class="data-noticia"><i class="fas fa-calendar-alt"></i> 02 de Abril de 2024</p>
+          <p>Em parceria com universidades públicas, a COMP+ agora oferece conteúdos digitais em ciência de dados, programação web e ética na tecnologia.</p>
+          <a href="#" class="btn-leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="noticia-card">
+          <h2>Relatório Anual 2023 já está disponível</h2>
+          <p class="data-noticia"><i class="fas fa-calendar-alt"></i> 28 de Março de 2024</p>
+          <p>O relatório de impacto de 2023 já está disponível na área de Transparência. Confira os projetos realizados, parcerias e indicadores de desempenho.</p>
+          <a href="#" class="btn-leia-mais">Leia mais <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Rodapé padrão -->
+  <!-- Rodapé -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
