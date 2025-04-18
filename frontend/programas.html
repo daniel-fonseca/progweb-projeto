@@ -1,172 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programas | COMP+</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programas | COMP+</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/programasStyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Menu Sticky -->
-    <header class="header-sticky">
-        <div class="logo">
-            <img src="assets/img/logo-comp-plus.png" alt="COMP+">
-        </div>
-        <nav class="nav-principal">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programas.html" class="active">Programas</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="parcerias.html">Parcerias</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Menu Sticky -->
+  <header class="header-sticky">
+    <div class="logo">
+      <img src="assets/img/logo-comp-plus.png" alt="COMP+" />
+    </div>
+    <nav class="nav-principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="programas.html" class="active">Programas</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="parcerias.html">Parcerias</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Conteúdo Principal -->
-    <section class="pagina-interna">
-        <div class="container">
-            <h1>Nossos Programas</h1>
-            <p class="subtitulo">Iniciativas para impulsionar carreiras e projetos em computação</p>
-            
-            <div class="programas-destaque">
-                <!-- Programa 1 -->
-                <div class="programa-detalhe" id="bolsas">
-                    <div class="programa-cabecalho">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h2>Bolsas de Estudo COMP+</h2>
-                    </div>
-                    <div class="programa-conteudo">
-                        <div class="programa-imagem">
-                            <img src="assets/img/programas/bolsas.jpg" alt="Bolsas de Estudo">
-                        </div>
-                        <div class="programa-info">
-                            <h3>Para quem é:</h3>
-                            <p>Estudantes de graduação e pós-graduação em áreas de TI com renda familiar per capita de até 1,5 salário mínimo.</p>
-                            
-                            <h3>Benefícios:</h3>
-                            <ul>
-                                <li>Auxílio mensal de R$ 1.200</li>
-                                <li>Mentoria com profissionais</li>
-                                <li>Acesso a cursos exclusivos</li>
-                            </ul>
-                            
-                            <h3>Próximas Inscrições:</h3>
-                            <p class="destaque-verde">01 a 30 de Agosto de 2024</p>
-                            
-                            <div class="programa-acoes">
-                                <a href="#form-inscricao" class="btn-cta">Quero me Inscrever</a>
-                                <a href="#" class="btn-saiba-mais"><i class="fas fa-file-pdf"></i> Edital Completo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Programa 2 -->
-                <div class="programa-detalhe" id="hackathons">
-                    <div class="programa-cabecalho">
-                        <i class="fas fa-code"></i>
-                        <h2>Maratona de Hackathons</h2>
-                    </div>
-                    <div class="programa-conteudo">
-                        <div class="programa-imagem">
-                            <img src="assets/img/programas/hackathon.jpg" alt="Hackathon">
-                        </div>
-                        <div class="programa-info">
-                            <h3>Para quem é:</h3>
-                            <p>Estudantes e profissionais de TI que querem desenvolver soluções inovadoras em equipe.</p>
-                            
-                            <h3>Como funciona:</h3>
-                            <ul>
-                                <li>Desafios reais de empresas parceiras</li>
-                                <li>Premiação em dinheiro e incubação</li>
-                                <li>Eventos regionais e nacional</li>
-                            </ul>
-                            
-                            <h3>Próxima edição:</h3>
-                            <p class="destaque-verde">Novembro 2024 - Inscrições abertas!</p>
-                            
-                            <div class="programa-acoes">
-                                <a href="eventos.html" class="btn-cta">Ver Calendário</a>
-                                <a href="#" class="btn-saiba-mais"><i class="fas fa-book"></i> Regulamento</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Programa 3 -->
-                <div class="programa-detalhe" id="inclusao">
-                    <div class="programa-cabecalho">
-                        <i class="fas fa-laptop-code"></i>
-                        <h2>Inclusão Digital</h2>
-                    </div>
-                    <div class="programa-conteudo">
-                        <div class="programa-imagem">
-                            <img src="assets/img/programas/inclusao.jpg" alt="Inclusão Digital">
-                        </div>
-                        <div class="programa-info">
-                            <h3>Para quem é:</h3>
-                            <p>Comunidades carentes, escolas públicas e grupos sub-representados na tecnologia.</p>
-                            
-                            <h3>O que oferecemos:</h3>
-                            <ul>
-                                <li>Laboratórios de informática móveis</li>
-                                <li>Cursos de programação básica</li>
-                                <li>Doação de equipamentos</li>
-                            </ul>
-                            
-                            <h3>Como participar:</h3>
-                            <p>Instituições podem solicitar o programa em qualquer época do ano.</p>
-                            
-                            <div class="programa-acoes">
-                                <a href="contato.html" class="btn-cta">Solicitar Visita</a>
-                                <a href="#" class="btn-saiba-mais"><i class="fas fa-hand-holding-heart"></i> Seja um Doador</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Conteúdo Principal -->
+  <section class="pagina-interna">
+    <div class="container">
+      <h1>Nossos Programas</h1>
+      <p class="subtitulo">Iniciativas para impulsionar carreiras e projetos em computação</p>
+
+      <div class="programas-destaque">
+        <!-- Programa 1 -->
+        <div class="programa-detalhe" id="bolsas">
+          <div class="programa-cabecalho">
+            <i class="fas fa-graduation-cap"></i>
+            <h2>Bolsas de Estudo COMP+</h2>
+          </div>
+          <div class="programa-conteudo">
+            <div class="programa-imagem">
+              <img src="assets/img/programas/bolsas.jpg" alt="Bolsas de Estudo">
             </div>
-            
-            <!-- Formulário de Interesse -->
-            <div class="formulario-interesse" id="form-inscricao">
-                <h2>Tenho interesse nos programas</h2>
-                <form>
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="nome-interesse">Nome Completo*</label>
-                            <input type="text" id="nome-interesse" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email-interesse">E-mail*</label>
-                            <input type="email" id="email-interesse" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="programa-interesse">Programa de Interesse*</label>
-                            <select id="programa-interesse" required>
-                                <option value="">Selecione...</option>
-                                <option value="bolsas">Bolsas de Estudo</option>
-                                <option value="hackathons">Hackathons</option>
-                                <option value="inclusao">Inclusão Digital</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem-interesse">Mensagem</label>
-                            <textarea id="mensagem-interesse" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-cta">
-                        <i class="fas fa-paper-plane"></i> Enviar Interesse
-                    </button>
-                </form>
+            <div class="programa-info">
+              <h3>Para quem é:</h3>
+              <p>Estudantes de graduação e pós-graduação em áreas de TI com renda familiar per capita de até 1,5 salário mínimo.</p>
+
+              <h3>Benefícios:</h3>
+              <ul>
+                <li>Auxílio mensal de R$ 1.200</li>
+                <li>Mentoria com profissionais</li>
+                <li>Acesso a cursos exclusivos</li>
+              </ul>
+
+              <h3>Próximas Inscrições:</h3>
+              <p class="destaque-verde">01 a 30 de Agosto de 2024</p>
+
+              <div class="programa-acoes">
+                <a href="#form-inscricao" class="btn-cta">Quero me Inscrever</a>
+                <a href="#" class="btn-saiba-mais"><i class="fas fa-file-pdf"></i> Edital Completo</a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-    </footer>
+        <!-- Programa 2 -->
+        <div class="programa-detalhe" id="hackathons">
+          <div class="programa-cabecalho">
+            <i class="fas fa-code"></i>
+            <h2>Maratona de Hackathons</h2>
+          </div>
+          <div class="programa-conteudo">
+            <div class="programa-imagem">
+              <img src="assets/img/programas/hackathon.jpg" alt="Hackathon">
+            </div>
+            <div class="programa-info">
+              <h3>Para quem é:</h3>
+              <p>Estudantes e profissionais de TI que querem desenvolver soluções inovadoras em equipe.</p>
 
-    <script src="js/scripts/formularios.js"></script>
+              <h3>Como funciona:</h3>
+              <ul>
+                <li>Desafios reais de empresas parceiras</li>
+                <li>Premiação em dinheiro e incubação</li>
+                <li>Eventos regionais e nacional</li>
+              </ul>
+
+              <h3>Próxima edição:</h3>
+              <p class="destaque-verde">Novembro 2024 - Inscrições abertas!</p>
+
+              <div class="programa-acoes">
+                <a href="eventos.html" class="btn-cta">Ver Calendário</a>
+                <a href="#" class="btn-saiba-mais"><i class="fas fa-book"></i> Regulamento</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programa 3 -->
+        <div class="programa-detalhe" id="inclusao">
+          <div class="programa-cabecalho">
+            <i class="fas fa-laptop-code"></i>
+            <h2>Inclusão Digital</h2>
+          </div>
+          <div class="programa-conteudo">
+            <div class="programa-imagem">
+              <img src="assets/img/programas/inclusao.jpg" alt="Inclusão Digital">
+            </div>
+            <div class="programa-info">
+              <h3>Para quem é:</h3>
+              <p>Comunidades carentes, escolas públicas e grupos sub-representados na tecnologia.</p>
+
+              <h3>O que oferecemos:</h3>
+              <ul>
+                <li>Laboratórios de informática móveis</li>
+                <li>Cursos de programação básica</li>
+                <li>Doação de equipamentos</li>
+              </ul>
+
+              <h3>Como participar:</h3>
+              <p>Instituições podem solicitar o programa em qualquer época do ano.</p>
+
+              <div class="programa-acoes">
+                <a href="contato.html" class="btn-cta">Solicitar Visita</a>
+                <a href="#" class="btn-saiba-mais"><i class="fas fa-hand-holding-heart"></i> Seja um Doador</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de Interesse -->
+      <div class="formulario-interesse" id="form-inscricao">
+        <h2>Tenho interesse nos programas</h2>
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nome-interesse">Nome Completo*</label>
+              <input type="text" id="nome-interesse" required>
+            </div>
+            <div class="form-group">
+              <label for="email-interesse">E-mail*</label>
+              <input type="email" id="email-interesse" required>
+            </div>
+            <div class="form-group">
+              <label for="programa-interesse">Programa de Interesse*</label>
+              <select id="programa-interesse" required>
+                <option value="">Selecione...</option>
+                <option value="bolsas">Bolsas de Estudo</option>
+                <option value="hackathons">Hackathons</option>
+                <option value="inclusao">Inclusão Digital</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem-interesse">Mensagem</label>
+              <textarea id="mensagem-interesse" rows="3"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-cta">
+            <i class="fas fa-paper-plane"></i> Enviar Interesse
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/img/logo-comp-plus-white.png" alt="COMP+" class="footer-logo" />
+          <p>Fundada em 2012, a COMP+ é uma fundação de apoio à pesquisa e inovação em computação.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Av. da Inovação, 123, São Paulo</p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@compmais.org.br</p>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="redes-sociais">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Fundação COMP+. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts/formularios.js"></script>
 </body>
 </html>
