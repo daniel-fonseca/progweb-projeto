@@ -56,6 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
           valor: parseFloat(document.getElementById('valor').value),
           mensagem: document.getElementById('mensagem').value,
         };
+
+        if (!dados.nome || !dados.email || !dados.valor || parseFloat(dados.valor) < 1) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor, preencha todos os campos obrigatórios corretamente.',
+          });
+          return;
+        }
   
         try {
           const resposta = await fetch('http://localhost:3000/api/doacao', {
@@ -64,7 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(dados),
           });
           const resultado = await resposta.json();
-          alert(resultado.mensagem);
+          // alert(resultado.mensagem);
+          Swal.fire({
+            icon: 'success',
+            title: 'Doação enviada!',
+            html: `Obrigado, <strong>${dados.nome}</strong>!<br>Sua doação de <strong>R$${parseFloat(dados.valor).toFixed(2)}</strong> foi registrada com sucesso.`,
+            showConfirmButton: false,
+            timer: 4000
+        });
           formDoacao.reset();
         } catch (erro) {
           alert('Erro ao registrar doação.');
@@ -138,38 +154,6 @@ const observer = new IntersectionObserver((entradas) => {
 });
 
 elementos.forEach(el => observer.observe(el));
-
-// --- Doações - Validação e Feedback do Formulário---
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("form-doacao");
-
-  form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Evita envio real
-
-      const nome = document.getElementById("nome").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const valor = document.getElementById("valor").value.trim();
-
-      if (!nome || !email || !valor || parseFloat(valor) < 1) {
-          Swal.fire({
-              icon: 'error',
-              title: 'Oops...',
-              text: 'Por favor, preencha todos os campos obrigatórios corretamente.',
-          });
-          return;
-      }
-
-      Swal.fire({
-          icon: 'success',
-          title: 'Doação enviada!',
-          html: `Obrigado, <strong>${nome}</strong>!<br>Sua doação de <strong>R$${parseFloat(valor).toFixed(2)}</strong> foi registrada com sucesso.`,
-          showConfirmButton: false,
-          timer: 4000
-      });
-
-      form.reset();
-  });
-});
 
 // --- Inscrição ---
 document.addEventListener("DOMContentLoaded", function () {
