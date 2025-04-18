@@ -1,0 +1,112 @@
+.eventos-lista .evento-card {
+    margin-bottom: 50px;
+  }
+  
+  .pagina-interna h1,
+  .pagina-interna h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: var(--cinza-escuro);
+  }
+  
+  .filtros-eventos {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .filtro-btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--cinza-claro);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .filtro-btn.active,
+  .filtro-btn:hover {
+    background-color: var(--azul-secundario);
+    color: white;
+  }
+  
+  .evento-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .evento-conteudo .btn-inscricao {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .eventos-passados {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .eventos-passados .arquivo-eventos {
+    background-color: rgba(44, 62, 80, 0.08);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+  
+  .arquivo-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .arquivo-card h3 {
+    color: var(--azul-primario);
+    margin-bottom: 10px;
+  }
+  
+  .arquivo-card p {
+    color: var(--cinza-escuro);
+    margin-bottom: 15px;
+  }
+  
+  .btn-verde-claro {
+    display: inline-block;
+    background-color: var(--verde-destaque);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-verde-claro:hover {
+    background-color: #1e874b;
+  }
+  
+  @media (max-width: 768px) {
+    .evento-card {
+      flex-direction: column;
+    }
+  
+    .evento-imagem img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
